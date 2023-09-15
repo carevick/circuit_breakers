@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background:#E2DCD0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-basis: 17%;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.breaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color: #F4E4B7;
+}
+
+div img {
+    border-radius: 10%;
+    margin-bottom: 0.3rem;
+}
+
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 10%;
+    border-style: ridge;
+    outline-style: groove;
+    padding: 0.5rem;
+    color: #E2DCD0;
+    background-color:#827E7F;
+    box-shadow: -8px -8px 5px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+    background-color: aquamarine;
+    color:#827E7F;
+    font-style: oblique;
+    outline: 2px #F4E4B7 groove;
+    transition: background .3s ease-in;
+    cursor: cell;
+}
+
+.closeButton {
+    box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+dialog {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 2rem;
+    color: #F4E4B7;
+    background: linear-gradient(135deg, #AADBD1, #613A2D);
+    border-radius: 5%;
+    outline: 2px ridge;
+    text-align: center;
+    opacity: 95%;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(3px);
+}
+
+@media (max-height: 680px) {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    button {
+        font-size: 0.85rem;
+    }
+    dialog {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-height: 590px) {
+    img {
+        width: 70px;
+        height: 70px;
+    }
+    button {
+        font-size: 0.75rem;
+    }
+    dialog {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-height: 530px) {
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    button {
+        font-size: 0.65rem;
+    }
+    dialog {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 60px;
+        height: 60px;
+    }
+    button {
+        font-size: 0.65rem;
+    }
+    dialog {
+        font-size: 1.25rem;
+        margin-top: 40%;
+    }
+}
+
+
+/* Color Theme Swatches in Hex */
+.Primary-Color-Theme--1-hex { color: #E2DCD0; }
+.Primary-Color-Theme--2-hex { color: #827E7F; }
+.Primary-Color-Theme--3-hex { color: #F4E4B7; }
+.Primary-Color-Theme--4-hex { color: #AADBD1; }
+.Primary-Color-Theme--5-hex { color: #613A2D; }
