@@ -9,23 +9,23 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     background:#E2DCD0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
 }
 
 .container {
     display: flex;
-    flex-basis: 17%;
+    flex-flow: row wrap;
     justify-content: center;
     padding: 0.5rem;
 }
 
 .breaker {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     padding: 0.5rem;
-    margin-top: 0.5rem;
+    margin: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #F4E4B7;
 }
 
@@ -35,7 +35,6 @@ div img {
 }
 
 button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     border-radius: 10%;
     border-style: ridge;
