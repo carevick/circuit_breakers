@@ -9,7 +9,7 @@ It is digital substitute for writed labels physical attached to each separately 
 
 Now we can **quickly access** information about the purpose of the ciruit breaker and easily find which breaker to turn off if necessary, especially in **emergency situations**. 
 
-It *simplifies life*, no more guessing which fuse is for which purpose. The retro image reminds us of the passage of time.
+It *simplifies life*, no more guessing which fuse is for which purpose. The retro image reminds us of ephemeral nature of life.
 
 Features that I hope to implement in the future would shorten the code and bring the project to completion faster.
 
