@@ -1,129 +1,229 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 1rem;
-    margin: 1rem auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background:#E2DCD0;
-    font-style: italic;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;  
+  background-color: #e2dcd0;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23827e7f' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  backdrop-filter: blur(1px);
+  background-attachment:fixed;
+
 }
 
 .container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 0.5rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 .breaker {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 0.5rem;
-    margin: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #F4E4B7;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #F4E4B7;
 }
 
 div img {
-    border-radius: 10%;
-    margin-bottom: 0.3rem;
+  border-radius: 10%;
+  margin-bottom: 0.3rem;
 }
 
 button {
-    font-size: 1rem;
-    border-radius: 10%;
-    border-style: ridge;
-    outline-style: groove;
-    padding: 0.5rem;
-    color: #E2DCD0;
-    background-color:#827E7F;
-    box-shadow: -8px -8px 5px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  border-radius: 10%;
+  border-style: ridge;
+  outline-style: groove;
+  padding: 0.5rem;
+  color: #E2DCD0;
+  background-color:#827E7F;
+  box-shadow: -8px -8px 5px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 button:hover {
-    background-color: aquamarine;
-    color:#827E7F;
-    font-style: oblique;
-    outline: 2px #F4E4B7 groove;
-    transition: background .3s ease-in;
-    cursor: cell;
+  background-color: aquamarine;
+  color:#827E7F;
+  font-style: oblique;
+  outline: 1px #F4E4B7 groove;
+  transition: .5s ease-in-out;
+  transform:translateY(1px);
+  cursor: pointer;
 }
 
 .closeButton {
-    box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: -4px -4px 6px rgba(255, 255, 255, 0.2), 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 dialog {
-    font-family: 'Shadows Into Light Two', cursive;
-    font-size: 2rem;
-    color: #F4E4B7;
-    background: linear-gradient(135deg, #AADBD1, #613A2D);
-    border-radius: 5%;
-    outline: 2px ridge;
-    text-align: center;
-    opacity: 95%;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 2rem;
+  color: #F4E4B7;
+  background: linear-gradient(135deg, #AADBD1, #613A2D);
+  border-radius: 5%;
+  outline: 2px ridge;
+  text-align: center;
+  opacity: 95%;
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1.5) forwards;
 }
 
 dialog::backdrop {
-    backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+@keyframes unfoldIn {
+  0% {
+  transform:scaleY(.005) scaleX(0);
+  }
+  50% {
+      transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+      transform:scaleY(1) scaleX(1);
+  }
+}
+
+@media (max-height: 760px) {
+  img {
+      width: 80px;
+      height: 80px;
+  }
+  button {
+      font-size: 0.85rem;
+  }
+  dialog {
+      font-size: 1.5rem;
+  }
 }
 
 @media (max-height: 680px) {
-    img {
-        width: 80px;
-        height: 80px;
-    }
-    button {
-        font-size: 0.85rem;
-    }
-    dialog {
-        font-size: 1.5rem;
-    }
+  body {
+      padding: 0%;
+  }
+  img {
+      width: 70px;
+      height: 70px;
+  }
+  button {
+      font-size: 0.85rem;
+  }
+  dialog {
+      font-size: 1.5rem;
+  }
 }
 
 @media (max-height: 590px) {
-    img {
-        width: 70px;
-        height: 70px;
-    }
-    button {
-        font-size: 0.75rem;
-    }
-    dialog {
-        font-size: 1.4rem;
-    }
+  img {
+      width: 60px;
+      height: 60px;
+  }
+  button {
+      font-size: 0.75rem;
+  }
+  dialog {
+      font-size: 1.4rem;
+  }
 }
 
 @media (max-height: 530px) {
-    img {
-        width: 60px;
-        height: 60px;
-    }
-    button {
-        font-size: 0.65rem;
-    }
-    dialog {
-        font-size: 1.25rem;
-    }
+  img {
+      width: 50px;
+      height: 50px;
+  }
+  button {
+      font-size: 0.65rem;
+  }
+  dialog {
+      font-size: 1.25rem;
+  }
+}
+
+@media (width > 2500px) {
+  .container {
+      padding: 2rem;
+      grid-gap: 20px;
+  }
+  .breaker {
+      padding: 1.5rem;
+  }
+  img {
+      width: 170px;
+      height: 170px;
+  }
+  button {
+      font-size: 2rem;
+  }
+  dialog {
+      font-size: 3rem;
+  }
+}
+
+@media (max-width: 1220px) {
+  img {
+      width: 60px;
+      height: 60px;
+  }
+  button {
+      font-size: 0.75rem;
+  }
+  dialog {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 800px) {
+  img {
+      width: 60px;
+      height: 60px;
+  }
+  button {
+      font-size: 0.65rem;
+  }
+  dialog {
+      font-size: 1.25rem;
+      margin-top: 30%;
+  }
 }
 
 @media (max-width: 500px) {
-    img {
-        width: 60px;
-        height: 60px;
-    }
-    button {
-        font-size: 0.65rem;
-    }
-    dialog {
-        font-size: 1.25rem;
-        margin-top: 40%;
-    }
+  .breaker {
+      margin: 0.75rem;
+  }
+  img {
+      width: 60px;
+      height: 60px;
+  }
+  button {
+      font-size: 0.65rem;
+  }
+  dialog {
+      font-size: 1.25rem;
+      margin-top: 30%;
+  }
+}
+
+@media (max-width: 450px) {
+  .breaker {
+      margin: 0.5rem;
+  }
+  img {
+      width: 30px;
+      height: 30px;
+  }
+  button {
+      font-size: 0.35rem;
+  }
+  dialog {
+      font-size: 1rem;
+  }
 }
 
 
@@ -133,3 +233,4 @@ dialog::backdrop {
 .Primary-Color-Theme--3-hex { color: #F4E4B7; }
 .Primary-Color-Theme--4-hex { color: #AADBD1; }
 .Primary-Color-Theme--5-hex { color: #613A2D; }
+.Primary-Color-Theme--6-hex{color: burlywood}
