@@ -1,4 +1,4 @@
-# carevick-circuitBreaker.github.io
+# carevick-circuitBreaker
 
 ## Household circuit breaker panel
 
