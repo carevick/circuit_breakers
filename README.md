@@ -13,5 +13,9 @@ It *simplifies life*, no more guessing which fuse is for which purpose. The retr
 
 Features that I hope to implement in the future would shorten the code and bring the project to completion faster.
 
-> This site was built using [Visual Studio Code](https://code.visualstudio.com/). 
+> This site was built using [Visual Studio Code](https://code.visualstudio.com/).
+
+> Visit [Circuit breakers](https://carevick.github.io/circuit_breakers/) website.
+
+> 
 
