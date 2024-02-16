@@ -1,4 +1,4 @@
-# carevick-circuitBreaker
+# circuit_breakers
 
 ## Household circuit breaker panel
 
