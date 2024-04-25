@@ -3,7 +3,7 @@
 ## Household circuit breaker panel
 
 ### Description
-This project is made for easier insight into the arrangement of circuit breakers inside household electrical system (panel).
+This project is a personal idea and was made for easier insight into the arrangement of circuit breakers inside household electrical system (panel).
 
 It is digital substitute for writed labels physical attached to each separately ciruit breaker.
 
